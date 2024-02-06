@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Jogo 21</title>
+</head>
+<body>      
+
+    <div class="container text-center">
+        <br>
+        <h1 class="title">Jogo do 21 com Javascript</h1>
+
+        <div class="row">
+            <div class="col ativo" id="jogador1">
+                <img src="img/player1.png" alt="Player 1">
+                <p>Jogador 1</p>
+
+                <p><strong>Pontos: <span id="pontuacao1">0</span></strong></p>
+            </div>
+
+            <div class="col" id="jogador2">
+                <img src="img/player2.png" alt="Player 2">
+                <p>Jogador 2</p>
+
+                <p><strong>Pontos: <span id="pontuacao2">0</span></strong></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col controls">
+                <button class="btn btn-success" onclick="trocarDeJogador()">Pular</button>
+                <button class="btn btn-primary" onclick="recomecar()">Recomeçar</button>
+                <button class="btn btn-danger" onclick="finalizarJogo()">Finalizar Jogo</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row carts">
+            <div class="col">
+                <img src="img/baralho-cartas.png" alt="Baralho" onclick="selecionarCarta()">
+            </div>
+            <div class="col">
+                <img src="img/carts/1.png" alt="Numero Carta" id="cartaSelecionada">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

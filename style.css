@@ -1,0 +1,22 @@
+.title {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 24px;
+    color: #666;
+}
+
+.ativo img {
+    background: yellow;
+}
+
+.controls {
+    margin: 10px;
+}
+
+.carts img {
+    max-width: 200px;
+}
+
+#cartaSelecionada {
+    display: none;
+}
